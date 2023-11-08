@@ -47,3 +47,67 @@
     --font-size-h3: 1.25rem;
   }
 }
+
+/* Base elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-bottom: var(--header-height);
+  font-family: var(--font-family);
+  font-size: var(--font-size-medium);
+  background: var(--color-body);
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4 {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-title);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Common CSS classes */
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section-title {
+  font-size: var(--h1-font-size);
+  text-align: center;
+}
+
+.section-subtitle {
+  display: block;
+  margin-bottom: 3rem;
+  font-size: var(--font-size-small);
+  text-align: center;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
