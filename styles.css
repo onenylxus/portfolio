@@ -112,6 +112,30 @@ img {
   gap: 1.5rem;
 }
 
+.button {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-weight-medium);
+  background: var(--color-tint);
+  color: #fff;
+}
+
+.button:hover {
+  background: var(--color-tint-alt);
+}
+
+.button-icon {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
 /* Header */
 .header {
   position: fixed;
@@ -259,7 +283,7 @@ img {
 }
 
 .home-scroll {
-  /* display: none; */
+  display: none;
 }
 
 .home-scroll-button {
