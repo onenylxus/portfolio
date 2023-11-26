@@ -91,7 +91,7 @@ img {
 }
 
 .section-title {
-  font-size: var(--h1-font-size);
+  font-size: var(--font-size-h1);
   text-align: center;
 }
 
@@ -308,4 +308,44 @@ img {
 
 .home-scroll-arrow {
   font-size: 1.25rem;
+}
+
+/* About section */
+.about-image {
+  width: 200px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about-description {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about-info {
+  display: flex;
+  margin-bottom: 2.5rem;
+  justify-content: space-evenly;
+}
+
+.about-title {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h2);
+  color: var(--color-title);
+}
+
+.about-name {
+  font-size: var(--font-size-tiny);
+}
+
+.about-title,
+.about-name {
+  display: block;
+  text-align: center;
+}
+
+.about-button {
+  display: flex;
+  justify-content: center;
 }
