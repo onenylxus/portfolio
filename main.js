@@ -6,6 +6,8 @@ const navLink = document.querySelectorAll('.nav-link');
 const contributions = document.querySelector('.contributions');
 const publicProjects = document.querySelector('.public-projects');
 const followers = document.querySelector('.followers');
+const skillsHeader = document.querySelectorAll('.skills-header');
+const skillsContent = document.querySelectorAll('.skills-content');
 
 // Show menu after toggle button clicked
 if (navToggle) {
@@ -46,3 +48,13 @@ navLink.forEach(element => {
   publicProjects.innerHTML = formatNumber(data2.public_repos);
   followers.innerHTML = formatNumber(data2.followers);
 })();
+
+// Toggle skills
+skillsHeader.forEach((header) => header.addEventListener('click', () => {
+  skillsContent.forEach((content) => {
+    content.className = 'skills-content skills-close';
+  });
+  if (header.parentNode.className === 'skills-content skills-close') {
+    header.parentNode.className = 'skills-content skills-open';
+  }
+}));
