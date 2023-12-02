@@ -462,12 +462,12 @@ img {
 }
 
 .skills-bar {
-  background-color: var(--color-tint-lighten);
+  background: var(--color-tint-lighten);
 }
 
 .skills-percentage {
   display: block;
-  background-color: var(--color-tint);
+  background: var(--color-tint);
 }
 
 .skills-html,
@@ -557,11 +557,59 @@ img {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--color-tint);
+  background: var(--color-tint);
 }
 
 .swiper-button-next,
 .swiper-button-prev,
 .swiper-pagination-bullet {
   outline: none;
+}
+
+/* Contact section */
+.contact-container {
+  row-gap: 3rem;
+}
+
+.contact-information {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  margin-right: 0.75rem;
+  font-size: 2rem;
+  color: var(--color-tint);
+}
+
+.contact-title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-h3);
+}
+
+.contact-subtitle {
+  font-size: var(--font-size-small);
+  color: var(--color-text-lighten);
+}
+
+.contact-content {
+  padding: 0.75rem 1rem 0.25rem;
+  border-radius: 0.5rem;
+  background: var(--color-input);
+}
+
+.contact-input {
+  width: 100%;
+  border: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+  outline: none;
+  font-family: var(--font-family);
+  font-size: var(--font-size-medium);
+  background: var(--color-input);
+  color: var(--color-text);
+}
+
+.contact-label {
+  font-size: var(--font-size-small);
+  color: var(--color-title);
 }
