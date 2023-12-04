@@ -27,7 +27,6 @@
   --color-text-lighten: hsl(220, 8%, 65%);
   --color-input: hsl(220, 70%, 96%);
   --color-body: hsl(220, 60%, 99%);
-  --color-container: #fff;
 
   /* Layering */
   --layer-tooltip: 1;
@@ -612,4 +611,60 @@ img {
 .contact-label {
   font-size: var(--font-size-small);
   color: var(--color-title);
+}
+
+/* Footer styles */
+.footer {
+  padding-top: 2rem;
+}
+
+.footer-container {
+  row-gap: 3.5rem;
+}
+
+.footer-background {
+  padding: 2rem 0 3rem;
+  background-color: var(--color-tint-alt);
+}
+
+.footer-title {
+  margin-bottom: 0.25rem;
+  font-size: var(--font-size-h1);
+}
+
+.footer-subtitle {
+  font-size: var(--font-size-small);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer-link:hover {
+  color: var(--color-tint-lighten);
+}
+
+.footer-social {
+  margin-right: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.footer-social:hover {
+  color: var(--color-tint-lighten);
+}
+
+.footer-text {
+  margin-top: 3rem;
+  font-size: var(--font-size-tiny);
+  text-align: center;
+  color: var(--color-text-lighten);
+}
+
+.footer-title,
+.footer-subtitle,
+.footer-link,
+.footer-social {
+  color: #fff;
 }
