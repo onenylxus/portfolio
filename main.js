@@ -1,6 +1,7 @@
 // Elements
 const header = document.querySelector('.header');
 const navMenu = document.querySelector('.nav-menu');
+const navThemeChanger = document.querySelector('.nav-theme-changer');
 const navToggle = document.querySelector('.nav-toggle');
 const navClose = document.querySelector('.nav-close');
 const navLink = document.querySelectorAll('.nav-link');
@@ -85,4 +86,17 @@ window.addEventListener('scroll', () => {
 // Show and hide scroll up button
 window.addEventListener('scroll', () => {
   scrollup.classList[window.scrollY >= 600 ? 'add' : 'remove']('show-scrollup');
+});
+
+// Change theme mode
+const storedTheme = localStorage.getItem('theme');
+if (storedTheme) {
+  document.body.classList[storedTheme === 'dark' ? 'add' : 'remove']('dark-theme');
+  navThemeChanger.classList[storedTheme === 'dark' ? 'add' : 'remove']('uil-sun');
+}
+
+navThemeChanger.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+  navThemeChanger.classList.toggle('uil-sun');
+  localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
 });

@@ -47,6 +47,15 @@
   }
 }
 
+/* Dark theme styles */
+body.dark-theme {
+  --color-tint-alt: hsl(220, 30%, 8%);
+  --color-title: hsl(220, 8%, 95%);
+  --color-text: hsl(220, 8%, 75%);
+  --color-input: hsl(220, 29%, 16%);
+  --color-body: hsl(220, 28%, 12%);
+}
+
 /* Base elements */
 * {
   padding: 0;
@@ -157,12 +166,28 @@ img {
   align-items: center;
 }
 
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
 .nav-logo,
 .nav-toggle {
   color: var(--color-title);
 }
 
 .nav-logo:hover {
+  color: var(--color-tint);
+}
+
+.nav-theme-changer {
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  color: var(--color-title);
+  cursor: pointer;
+}
+
+.nav-theme-changer:hover {
   color: var(--color-tint);
 }
 
