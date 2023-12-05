@@ -64,6 +64,7 @@ body {
   font-size: var(--font-size-medium);
   background: var(--color-body);
   color: var(--color-text);
+  overflow-y: visible;
 }
 
 h1,
@@ -225,6 +226,11 @@ img {
 
 .show-menu {
   bottom: 0;
+}
+
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 15%);
+  transition: 0.3s;
 }
 
 /* Home section */
@@ -624,7 +630,7 @@ img {
 
 .footer-background {
   padding: 2rem 0 3rem;
-  background-color: var(--color-tint-alt);
+  background: var(--color-tint-alt);
 }
 
 .footer-title {
@@ -667,4 +673,30 @@ img {
 .footer-link,
 .footer-social {
   color: #fff;
+}
+
+/* Scroll up button styles */
+.scrollup {
+  position: fixed;
+  bottom: -20%;
+  right: 1rem;
+  padding: 0 0.3rem;
+  border-radius: 0.4rem;
+  background: var(--color-tint);
+  opacity: 0.8;
+  z-index: var(--layer-tooltip);
+  transition: 0.3s;
+}
+
+.scrollup:hover {
+  background: var(--color-tint-alt);
+}
+
+.scrollup-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.show-scrollup {
+  bottom: 5rem;
 }

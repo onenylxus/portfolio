@@ -1,4 +1,5 @@
 // Elements
+const header = document.querySelector('.header');
 const navMenu = document.querySelector('.nav-menu');
 const navToggle = document.querySelector('.nav-toggle');
 const navClose = document.querySelector('.nav-close');
@@ -8,6 +9,7 @@ const publicProjects = document.querySelector('.public-projects');
 const followers = document.querySelector('.followers');
 const skillsHeader = document.querySelectorAll('.skills-header');
 const skillsContent = document.querySelectorAll('.skills-content');
+const scrollup = document.querySelector('.scrollup');
 
 // Show menu after toggle button clicked
 if (navToggle) {
@@ -73,4 +75,14 @@ const swiper = new Swiper('.projects-container', {
   },
   mousewheel: true,
   keyboard: true,
+});
+
+// Show and hide scroll header
+window.addEventListener('scroll', () => {
+  header.classList[window.scrollY >= 80 ? 'add': 'remove']('scroll-header');
+});
+
+// Show and hide scroll up button
+window.addEventListener('scroll', () => {
+  scrollup.classList[window.scrollY >= 600 ? 'add' : 'remove']('show-scrollup');
 });
