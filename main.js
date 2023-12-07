@@ -5,6 +5,7 @@ const navThemeChanger = document.querySelector('.nav-theme-changer');
 const navToggle = document.querySelector('.nav-toggle');
 const navClose = document.querySelector('.nav-close');
 const navLink = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section[id]');
 const contributions = document.querySelector('.contributions');
 const publicProjects = document.querySelector('.public-projects');
 const followers = document.querySelector('.followers');
@@ -86,6 +87,18 @@ window.addEventListener('scroll', () => {
 // Show and hide scroll up button
 window.addEventListener('scroll', () => {
   scrollup.classList[window.scrollY >= 600 ? 'add' : 'remove']('show-scrollup');
+});
+
+// Set active link
+window.addEventListener('scroll', () => {
+  const dy = window.scrollY;
+  sections.forEach((section) => {
+    const h = section.offsetHeight;
+    const t = section.offsetTop - 50;
+    const id = section.getAttribute('id');
+    const navLink = document.querySelector(`.nav-menu a[href*=${id}]`);
+    navLink.classList[(dy > t && dy <= t + h) ? 'add' : 'remove']('active-link');
+  });
 });
 
 // Change theme mode
