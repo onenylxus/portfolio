@@ -417,7 +417,6 @@ textarea {
 
 .career-subtitle {
   display: inline-block;
-  margin-bottom: 1rem;
   font-size: var(--font-size-small);
 }
 
@@ -817,7 +816,6 @@ textarea {
 
   .career-content {
     display: grid;
-    grid-template-columns: 0.6fr;
     justify-content: center;
   }
 }
