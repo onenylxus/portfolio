@@ -1,4 +1,4 @@
-Copyright (c) 2023, Nicholas Ng
+Copyright (c) 2025, Nicholas Ng
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

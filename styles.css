@@ -19,17 +19,18 @@
   --font-size-h3: 1.125rem;
 
   /* Colors */
-  --color-tint: hsl(220, 69%, 61%);
-  --color-tint-alt: hsl(220, 57%, 53%);
-  --color-tint-lighten: hsl(220, 92%, 85%);
-  --color-title: hsl(220, 8%, 15%);
-  --color-text: hsl(220, 8%, 45%);
-  --color-text-lighten: hsl(220, 8%, 65%);
-  --color-hover: hsl(220, 57%, 53%);
-  --color-input: hsl(220, 70%, 96%);
-  --color-body: hsl(220, 60%, 99%);
-  --color-scroll: hsl(220, 12%, 90%);
-  --color-thumb: hsl(220, 12%, 80%);
+  --hue: 240;
+  --color-tint: hsl(var(--hue), 69%, 61%);
+  --color-tint-alt: hsl(var(--hue), 57%, 53%);
+  --color-tint-lighten: hsl(var(--hue), 92%, 85%);
+  --color-title: hsl(var(--hue), 8%, 15%);
+  --color-text: hsl(var(--hue), 8%, 45%);
+  --color-text-lighten: hsl(var(--hue), 8%, 65%);
+  --color-hover: hsl(var(--hue), 57%, 53%);
+  --color-input: hsl(var(--hue), 70%, 96%);
+  --color-body: hsl(var(--hue), 60%, 99%);
+  --color-scroll: hsl(var(--hue), 12%, 90%);
+  --color-thumb: hsl(var(--hue), 12%, 80%);
 
   /* Layering */
   --layer-tooltip: 1;
@@ -52,13 +53,13 @@
 
 /* Dark theme styles */
 body.dark-theme {
-  --color-tint-alt: hsl(220, 30%, 8%);
-  --color-title: hsl(220, 8%, 95%);
-  --color-text: hsl(220, 8%, 75%);
-  --color-input: hsl(220, 29%, 16%);
-  --color-body: hsl(220, 28%, 12%);
-  --color-scroll: hsl(220, 12%, 48%);
-  --color-thumb: hsl(220, 12%, 36%);
+  --color-tint-alt: hsl(var(--hue), 30%, 8%);
+  --color-title: hsl(var(--hue), 8%, 95%);
+  --color-text: hsl(var(--hue), 8%, 75%);
+  --color-input: hsl(var(--hue), 29%, 16%);
+  --color-body: hsl(var(--hue), 28%, 12%);
+  --color-scroll: hsl(var(--hue), 12%, 48%);
+  --color-thumb: hsl(var(--hue), 12%, 36%);
 }
 
 /* Base elements */
